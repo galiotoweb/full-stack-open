@@ -1,0 +1,10 @@
+0.5: New Note
+
+note over browser:
+browser sends new note from form as JSON-data with content of note and timestamp as date
+end note
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+note over server:
+("The request has been fulfilled and has resulted in one or more new resources being created.")
+end note
+server-->browser: 201 Created 
